@@ -1,0 +1,27 @@
+{
+    "id":"rosalind-williams",
+
+    "innovator":{
+        "name":"Rosalind Williams",
+        "link":null,
+        "headshot":"Rosalind-Williams.png"
+    },
+
+    "org":{
+        "name":"WITH ACTION",
+        "link":null,
+        "logo":null
+    },
+
+    "location":{
+        "label":"St. Louis, Missouri",
+        "lonlat":[-90.2, 38.6],
+        "region":"National"
+    },
+    
+    "description":[
+"Rosalind Williams is tackling biases in the standard appraisal process by advocating for changes to the guidelines set by regulatory bodies and government-sponsored entities (GSEs) like Fannie Mae and Freddie Mac. Currently, these guidelines limit the appraisers to using home sales from “similar areas,” which perpetuates decades of undervaluation of homes in Black-majority neighborhoods.",
+"Rosalind is pushing for regulators and GSEs to broaden the criteria for appraisals, allowing appraisers to consider comparable properties from a wider range of neighborhoods, including those that have not experienced devaluation. This would provide a more accurate picture of a home’s value. She also advocates for including neighborhood characteristics—such as access to amenities, quality of local schools, and shorter commute times—in the appraisal process, as these factors are often overlooked in the current system.",
+"By expanding the pool of comparable houses and acknowledging the positive attributes of historically undervalued neighborhoods, Rosalind aims to enable homeowners to access equity in their properties that has previously been out of reach. This approach not only improves individual homeowners' financial positions but also plays a critical role in restoring overall value to these neighborhoods, fostering economic growth and stability in the long term."
+    ]
+}

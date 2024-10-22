@@ -1,0 +1,27 @@
+{
+    "id":"lance-george",
+
+    "innovator":{
+        "name":"Lance George",
+        "link":null,
+        "headshot":"Lance-George.png"
+    },
+
+    "org":{
+        "name":"Housing Assistance Council",
+        "link":"https://ruralhome.org/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Washington, DC",
+        "lonlat":[-77.0, 38.9],
+        "region":"Rural, National"
+    },
+    
+    "description":[
+        "At the Housing Assistance Council, Lance George and Jennifer McAllister are promoting alternative ownership models for residents in manufactured home parks, which are more conventionally referred to as mobile home parks, even though manufactured homes are far from mobile. Resident-owned manufactured home community models empower residents to gain land tenure and financial stability, while creating more opportunities to build a community.",
+        "Historically, manufactured home parks have provided a more affordable path to homeownership for low-income individuals and families. In these communities, about three-quarters of residents own their homes but must rent the land beneath them. This arrangement puts homeowners in a precarious position, as landlords can only increase profits by raising rents or cutting property maintenance costs. As a result, residents often face rising rental costs and declining services, increasing their overall housing expenses. This setup leaves homeowners with little control over their neighborhoods, minimal legal protections, and few options for relocating their homes.",
+        "Lance and Jennifer work with residents of manufactured home communities to collectively purchase and cooperatively own and manage the land under their homes. This cooperative ownership model gives residents greater control over monthly costs, community repairs, and improvements, encouraging them to invest in neighborhood improvements. It also provides eviction security and strengthens community relationships, enhancing both financial and social stability for homeowners."
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id":"kwasi-frye",
+
+    "innovator":{
+        "name":"Kwasi Frye",
+        "link":null,
+        "headshot":"Kwasi_Frye.png"
+    },
+
+    "org":{
+        "name":"SayLambda",
+        "link":null,
+        "logo":null
+    },
+
+    "location":{
+        "label":"Washington, DC",
+        "lonlat":[-77.0, 38.9],
+        "region":"National"
+    },
+    
+    "description":[
+"Kwasi Frye is helping prospective homeowners, particularly Black homebuyers, access the essential financing needed to purchase homes. ",
+"Many Black homebuyers face significant capital and income constraints and are often unaware of down-payment assistance programs offered by municipal and philanthropic entities.",
+"To tackle this issue, Kwasi is building SayLambda, an online platform that will provide a comprehensive database of incentive programs, allowing users to search for and explore all available home purchase options in their preferred localities. The platform will also connect homebuyers with a network of coaches, lenders, real estate agents, and other prospective buyers, increasing their likelihood of successfully completing the homebuying process. As the platform gathers more data on homebuyer preferences, SayLambda can provide municipalities new insight into which purchase vehicles homebuyers prefer and what works when it comes to achieving their social and communities goals for these programs.",
+"Through SayLambda, potential homeowners can discover a wide range of home purchase options they might otherwise have missed. The platform will work to broaden their opportunities, increasing the likelihood of securing housing stability and building wealth in their chosen neighborhoods. Homeowners looking to sell will benefit from a larger pool of prospective buyers."
+    ]
+}

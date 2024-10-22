@@ -1,0 +1,27 @@
+{
+    "id":"ellen-sahli",
+
+    "innovator":{
+        "name":"Ellen Sahli",
+        "link":null,
+        "headshot":"Ellen-Sahli.png"
+    },
+
+    "org":{
+        "name":"Family Housing Fund",
+        "link":"https://www.fhfund.org/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Minneapolis, Minnesota",
+        "lonlat":[-93.3, 45.0],
+        "region":"National"
+    },
+    "description":[
+        "Ellen Sahli and Karyssa Scheck at the Family Housing Fund (FHF) are working to challenge conventional loan requirements that limit homeownership, especially for lower-income individuals and those with fewer financial resources.",
+        "In the United States, a 20% down payment has long been the standard for home purchases. Lenders typically view mortgages with lower down payments as riskier, leading to higher interest rates and mortgage insurance costs for buyers, which increases their monthly payments. This disproportionately affects first-time buyers and low- to moderate-income families, who often lack generational wealth or financial support.",
+        "FHF is tackling this barrier by challenging the necessity of a large down payment. Motivated, in part, by research from JP Morgan Chase, which suggests that post-closing liquidity (access to cash after the purchase) is a stronger predictor of mortgage default than equity or income, FHF is developing a mortgage reserve account.  This account enables buyers to save for mortgage payments and potential home repairs, providing a financial cushion during periods of income loss or economic uncertainty.",
+        "If successful, FHF’s initiative has the potential to demonstrate that the 20% down payment requirement is an unnecessary obstacle, exacerbating the racial wealth gap. By advocating for more flexible mortgage products, FHF hopes to expand homeownership opportunities to a wider range of buyers previously excluded from the market."
+    ]
+}

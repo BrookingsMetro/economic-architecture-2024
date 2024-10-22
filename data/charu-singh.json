@@ -1,0 +1,29 @@
+{
+    "id":"charu-singh",
+
+    "innovator":{
+        "name":"Charu Singh",
+        "link":null,
+        "headshot":"Charu-Singh.png"
+    },
+
+    "org":{
+        "name":"Just Value Inc.",
+        "link":"https://justvalue.io/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Jersey City, New Jersey",
+        "lonlat":[-74.0, 40.7],
+        "region":"National"
+    },
+    
+    "description":[
+"Charu Singh is building the Just Value Automated Valuation Model (AVM) to uproot biases embedded in the standard appraisal process by changing which homes appraisers look to for comparisons. ",
+"In the current home appraisal process, appraisers select comparable properties—recently sold, similar homes in the same neighborhood—to estimate a home’s potential sale value. This practice often reinforces artificially low ceilings on home values in Black neighborhoods, where systemic devaluation and disinvestment have historically suppressed property values.",
+"Charu, through Just Value AVM, is developing an alternative valuation model to break the cycle of devaluation in underserved communities. Using data-driven metrics, Just Value AVM expands the geographic scope for selecting comparable properties, choosing homes with similar characteristics (e.g., square footage, number of rooms) rather than being confined to the same neighborhood.",
+"Additionally, the model considers neighborhood features often ignored by standard appraisals, such as proximity to amenities, commute times, and transportation routes. This holistic approach helps recover what Charu calls “recovered value” for homes that have historically been undervalued. ",
+"By providing more accurate and comprehensive valuations that reflect the true benefits of living in long-devalued neighborhoods, Just Value AVM can enable banks to recognize additional equity in these properties and offer better financing terms to buyers. Home sellers also benefit, as they can challenge low appraisals driven by outdated methods that disproportionately penalize homes in Black neighborhoods."
+    ]
+}

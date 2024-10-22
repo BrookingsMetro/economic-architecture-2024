@@ -1,0 +1,28 @@
+{
+    "id":"john-green",
+
+    "innovator":{
+        "name":"John Green",
+        "link":null,
+        "headshot":"John_Green.png"
+    },
+
+    "org":{
+        "name":"Blackstar Stability",
+        "link":"https://blackstarstability.com/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Washington, DC",
+        "lonlat":[-77.0, 38.9],
+        "region":"National"
+    },
+    
+    "description":[
+"Through Blackstar Stability, John Green and George Scott are realizing a unique market opportunity to combat the predatory practices associated with land contracts in small-dollar homes sales—a market where banks typically have little incentive to offer mortgages. ",
+"Low-income buyers or those with limited capital often find themselves in one-sided lease-to-own agreements that lack regulatory oversight, leaving few able to achieve true homeownership. To tackle this, John and his team at Blackstar Stability focus on converting these problematic land contracts into fairer mortgage agreements.",
+"Blackstar Stability operates by purchasing small-dollar home titles in bulk, allowing them to negotiate more favorable terms. They then restructure the one-sided contracts into legally sound, affordable mortgages, which are sold back to homebuyers. This approach not only enhances buyer protections but also lays the foundation for John, George, and their team to create a secondary market for small-dollar mortgages. ",
+"By facilitating the purchase of homes priced below $100K, Blackstar Stability promotes fair and equitable access to housing finance, particularly for communities historically excluded from the mortgage industry. Their innovative model encourages fairer financing practices and contracts, helping to expand homeownership opportunities for a broader range of individuals and communities."
+    ]
+}

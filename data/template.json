@@ -1,0 +1,29 @@
+{
+    "id":"santhosh-ramdoss",
+
+    "innovator":{
+        "name":"Santhosh Ramdoss",
+        "link":null,
+        "headshot":"Santhosh-Ramdoss.png"
+    },
+
+    "org":[{
+        "name":"",
+        "link":"",
+        "logo":null
+    },
+    {
+        "name":"",
+        "link":"",
+        "logo":null
+    }],
+
+    "location":{
+        "label":"",
+        "lonlat":[],
+        "region":""
+    },
+    
+    "description":[
+    ]
+}

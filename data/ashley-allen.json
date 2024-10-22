@@ -1,0 +1,28 @@
+{
+    "id":"ashley-allen",
+
+    "innovator":{
+        "name":"Ashley Allen",
+        "link":null,
+        "headshot":"Ashley-Allen.png"
+    },
+
+    "org":{
+        "name":"Houston Community Land Trust",
+        "link":"https://www.houstonclt.org/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Houston, TX",
+        "lonlat":[-95.4, 29.8],
+        "region":"City of Houston"
+    },
+    
+    "description":[
+        "As the founding executive director of Houston Community Land Trust (HCLT), Ashley Allen is leading efforts to fight gentrification in Houston’s historically Black neighborhoods.",
+        "Ordinarily, when a home is sold, a buyer purchases the house and the land underneath. Community land trusts, like HCLT, however, separate the land from the home, allowing homebuyers to pay the price of the house alone. The CLT retains ownership of the land, leasing it to homeowners through a long-term, renewable ground lease. Since this structure takes the value of the land and its appreciation out of the equation, it permanently lowers the price of the home, preventing the kind of speculative development that leads to gentrification and displacement.",
+        "Through its Homebuyer Choice Program, HCLT enables homebuyers below 50% of the Area Median Income to comfortably purchase a home and, in many cases, at a cost lower than renting. Buyers in the program can choose any home anywhere in the Houston metro area, and if it meets certain criteria, HCLT will subsidize the purchase with up to $150,000. Once the owner buys it, the home becomes a permanent part of the CLT, whose mission is to keep it secure and affordable. That way, HCLT’s holdings are not limited to land in certain neighborhoods, like so many CLTs across the United States, and can expand throughout the Houston metro area.",
+        "Noting the potential of CLTs to create a more stable housing market, the Texas Legislature recently passed a bill that expands the types of organizations that can establish CLTs and adjusts tax assessment rules. Now, CLT homes will be assessed based on the subsidized purchase price and ground lease, rather than the market value of the property. This change will lower taxes for CLT homeowners, making homeownership even more affordable in the long-term."
+    ]
+}

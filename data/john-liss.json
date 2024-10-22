@@ -1,0 +1,28 @@
+{
+    "id":"john-liss",
+
+    "innovator":{
+        "name":"John Liss",
+        "link":null,
+        "headshot":"John-Liss.png"
+    },
+
+    "org":{
+        "name":"True Footage",
+        "link":"https://truefootage.tech/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Austin, Texas",
+        "lonlat":[-97.7, 30.3],
+        "region":"National"
+    },
+    "description":[
+        "John Liss founded True Footage to combat the inflationary pressures and biases often present in the traditional appraisal process. In the current system, sellers frequently share a target sales price with appraisers, which can skew valuations—leading to overvaluation in affluent neighborhoods and undervaluation in disinvested areas.",
+        "John is reshaping this process in two key ways: First, appraisals are conducted “blind”, meaning the appraiser is unaware of the target sales price before completing their assessment. This encourages appraisers to base their valuations solely on observations and industry expertise, free from external influence.",
+        "Second, instead of offering a single value, appraisers provide a range of values for the property. This allows prospective buyers to make offers within that range, reducing pressure to meet a specific, often inflated price. If a buyer’s offer falls within the range, it becomes the appraised value, making pricing more flexible and realistic.",
+        "This more nuanced approach eliminates arbitrary decisions and is likely to align with the homeowner's final selling price, which may be slightly higher than a single, fixed value would suggest. For homeowners—particularly in Black-majority neighborhoods—this method increases the likelihood of receiving fair and accurate appraisals, independent of predetermined price targets. It also curbs overvaluation in wealthier neighborhoods, promoting a more equitable distribution of home values across the market.",
+        "By empowering homeowners in historically marginalized communities to realize more equity in their homes, True Footage fosters financial stability and greater opportunities for wealth generation."
+    ]
+}

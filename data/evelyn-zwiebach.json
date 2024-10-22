@@ -1,0 +1,27 @@
+{
+    "id":"evelyn-zwiebach",
+
+    "innovator":{
+        "name":"Evelyn Zwiebach",
+        "link":null,
+        "headshot":"Evelyn_Zweibach.png"
+    },
+
+    "org":{
+        "name":"Enterprise Community Partners",
+        "link":"https://www.enterprisecommunity.org/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Washington, DC",
+        "lonlat":[-77.0, 38.9],
+        "region":"Michigan, Maryland"
+    },
+    
+    "description":[
+"Evelyn Zwiebach at Enterprise Community Partners is leading efforts to secure statewide policies that reform land contracts, making them more transparent and beneficial for homebuyers while encouraging good-faith sellers.",
+"Land contracts were originally designed for small-dollar home sales that don’t qualify for traditional mortgages, often because of a home’s low value. Historically, banks have had little incentive to offer mortgage products for such transactions. However, land contracts have become prone to abuse in cities nationwide. These agreements often lack transparency, bypass official reporting, and operate with little to no regulation. As a result, they are frequently used in predatory rent-to-own schemes that deny residents the chance to achieve homeownership and create housing insecurity.",
+"The new policy will require land contracts to be registered with local governments and introduce legal protections for homebuyers, such as capping interest rates and mandating title insurance, to curb exploitative practices. To support the policy’s implementation, Enterprise Community Partners launched a Land Contract Buyer Guide, in collaboration with the City of Detroit and the University of Michigan’s Poverty Solutions. This initiative highlights how, with proper safeguards, land contracts can become a viable pathway to homeownership for those who might otherwise be excluded from traditional homebuying options."
+    ]
+}

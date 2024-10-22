@@ -1,0 +1,29 @@
+{
+    "id":"bree-jones",
+
+    "innovator":{
+        "name":"Bree Jones",
+        "link":null,
+        "headshot":"Bree_Jones.png"
+    },
+
+    "org":{
+        "name":"Parity Homes",
+        "link":"http://www.parityhomes.com/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Baltimore, Maryland",
+        "lonlat":[-76.6, 39.3],
+        "region":"City of Baltimore"
+    },
+    
+    "description":[
+        "Bree Jones founded Parity Homes, an equitable development company, to pioneer a way to bring development without displacement to historically Black-majority neighborhoods in West Baltimore now experiencing hyper-vacancy.",
+        "Conventionally, an individual homebuyer shoulders the risk and uncertainty when they purchase a home. Owing to years of deferred maintenance, the deteriorated condition of homes in historically redlined and disinvested neighborhoods has made homeownership in these areas nearly impossible. The cost of acquiring and rehabbing a property to make it livable is often more than the home’s appraised value.",
+        "Through Parity Homes, Bree is building a different approach, anchored by what Bree calls “collective economics”, to create affordable homeownership of newly renovated properties in West Baltimore. Parity’s model leverages mutual goals or preferences of a group to secure economic gains for the whole group. Instead of rehabbing one house at a time, Parity buys and rehabilitates abandoned properties by the block in distressed areas. In addition, Parity recruits groups of new owners who are already socially connected (e.g., neighbors, family members) and willing to buy in as a collective and move in at the same time. These groups bring their own social capital with them, creating not just blocks of affordable housing, but blocks of connected communities.",
+        "Neighborhoods with numerous vacant or run-down buildings pose increased risks and costs to nearby homeowners, from lowering property values to spreading pest infestations. However, when Parity homeowners move into a block as part of a group, they help reduce those risks and costs for one another.",
+        "Parity Homes partners with local banks to help homebuyers qualify for mortgages and collaborates with Neighborhood Housing Services to offer homeownership counseling to prospective buyers." 
+    ]
+}
