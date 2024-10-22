@@ -10383,7 +10383,7 @@ function Profile($$anchor, $$props) {
 
 	console.log(orgs);
 
-	let src = url.root + "assets/headshots/" + profile_data().innovator.headshot;
+	let src = "assets/headshots/" + profile_data().innovator.headshot;
 
 	init$1();
 
