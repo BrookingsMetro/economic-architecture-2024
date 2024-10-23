@@ -10533,6 +10533,7 @@ function resize(){
     try{
         let box2 = document.getElementById("ea-map-controls").getBoundingClientRect();
         h2 = Math.round(box2.bottom - box2.top);
+        console.log("h2: "+h2);
     }
     catch(e){
         h2 = 0;
@@ -10615,16 +10616,20 @@ function Main($$anchor, $$props) {
 
 	let max_height = mutable_state("100vh");
 
+	function update_max_height() {
+		let dims = resize();
+
+		set$2(max_height, `calc(100vh - ${dims.offset}px`);
+	}
+
+	window.addEventListener("resize", update_max_height);
+
 	//display the selected profile
 	//only run this when the user clicks on map or from dropdown
 	async function pinit() {
 		await tick();
 		pinned_profile(); //(1) make sure it's visible
-		await tick();
-
-		let dims = resize();
-
-		set$2(max_height, `calc(100vh - ${dims.offset}px`); //scroll to pinned place -- no longer needed
+		update_max_height(); //update max height of profile container
 	}
 
 	//add the profile-is-pinned class to the pinned profile -- enables subtle animation
@@ -10781,5 +10786,4 @@ function load_main(){
 
     }
 
-    window.addEventListener("resize", resize); //no longer really necessary
     window.addEventListener("load", load_main);
