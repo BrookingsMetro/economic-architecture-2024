@@ -10620,10 +10620,11 @@ function Main($$anchor, $$props) {
 	async function pinit() {
 		await tick();
 		pinned_profile(); //(1) make sure it's visible
+		await tick();
 
 		let dims = resize();
 
-		set$2(max_height, `${dims.height - dims.offset}px`); //scroll to pinned place -- no longer needed
+		set$2(max_height, `calc(100vh - ${dims.offset}px`); //scroll to pinned place -- no longer needed
 	}
 
 	//add the profile-is-pinned class to the pinned profile -- enables subtle animation
