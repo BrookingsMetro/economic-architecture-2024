@@ -10527,8 +10527,8 @@ function resize(){
 }
 
 var root_1 = template(`<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">`, 1);
-var root_2 = template(`<option class="svelte-171vfep"> </option>`);
-var root = template(`<div class="svelte-root svelte-171vfep"><div class="title-box svelte-171vfep"><h1 class="svelte-171vfep">Map of Structural Innovations in the United States</h1></div> <div class="content-box svelte-171vfep"><div class="svelte-171vfep"><div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;margin-bottom:15px;"><select style="display:inline-block; margin:1em auto;" class="svelte-171vfep"></select></div> <div class="flex-container svelte-171vfep"><div class="map-container svelte-171vfep"><!> <!></div> <div class="profile-container svelte-171vfep"></div></div></div></div></div>`);
+var root_2 = template(`<option class="svelte-178srg5"> </option>`);
+var root = template(`<div class="svelte-root svelte-178srg5"><div class="title-box svelte-178srg5"><h1 class="svelte-178srg5">Map of Structural Innovations in the United States</h1></div> <div class="content-box svelte-178srg5"><div class="svelte-178srg5"><div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;margin-bottom:15px;"><select style="display:inline-block; margin:1em auto;" class="svelte-178srg5"></select></div> <div class="flex-container svelte-178srg5"><div class="map-container svelte-178srg5"><!> <!></div> <div class="profile-container svelte-178srg5"></div></div></div></div></div>`);
 
 function Main($$anchor, $$props) {
 	push($$props, false);
