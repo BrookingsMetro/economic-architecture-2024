@@ -4,32 +4,32 @@
     }
 
 
-    .svelte-map-profile.svelte-x7fviv{
+    .svelte-map-profile.svelte-1sm8h9z{
         padding:0.5em 15px;
         padding-top:15px;
         margin:1em 0px;
     }
 
-    .svelte-map-profile.svelte-x7fviv p:where(.svelte-x7fviv){
+    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z){
         color:#000000;
     }
 
-    .svelte-map-profile.svelte-x7fviv p.reading:where(.svelte-x7fviv){
+    .svelte-map-profile.svelte-1sm8h9z p.reading:where(.svelte-1sm8h9z){
         font-size:16px;
         line-height:1.4em;
         margin:0em 0em 1em 0em;
         font-weight:400;
     }
 
-    .svelte-map-profile.svelte-x7fviv p.innovator-name:where(.svelte-x7fviv),
-    .svelte-map-profile.svelte-x7fviv p.org-name:where(.svelte-x7fviv){
+    .svelte-map-profile.svelte-1sm8h9z p.innovator-name:where(.svelte-1sm8h9z),
+    .svelte-map-profile.svelte-1sm8h9z p.org-name:where(.svelte-1sm8h9z){
         font-size:20px;
         line-height:1.2em;
         font-weight:900;
         margin:0em 0em 10px 0em;
     }
 
-    .svelte-map-profile.svelte-x7fviv div.innovator-photo:where(.svelte-x7fviv):before{
+    .svelte-map-profile.svelte-1sm8h9z div.innovator-photo:where(.svelte-1sm8h9z):before{
         content:"";
         position:absolute;
         top:-10px;
@@ -44,7 +44,7 @@
 
     }
 
-    .svelte-map-profile.svelte-x7fviv div.innovator-photo:where(.svelte-x7fviv):after{
+    .svelte-map-profile.svelte-1sm8h9z div.innovator-photo:where(.svelte-1sm8h9z):after{
         content:"";
         position:absolute;
         top:-6px;
@@ -59,7 +59,7 @@
 
     }
 
-    .svelte-map-profile.svelte-x7fviv div.innovator-photo:where(.svelte-x7fviv) /* (unused) .svelte-map-profile div.org-logo*/{
+    .svelte-map-profile.svelte-1sm8h9z div.innovator-photo:where(.svelte-1sm8h9z) /* (unused) .svelte-map-profile div.org-logo*/{
         width:100%;
         max-width:250px;
         height:25vh;
@@ -70,7 +70,7 @@
         position:relative;
     }
 
-    .svelte-map-profile.svelte-x7fviv div.innovator-photo > img:where(.svelte-x7fviv) /* (unused) .svelte-map-profile div.org-logo > img*/{
+    .svelte-map-profile.svelte-1sm8h9z div.innovator-photo > img:where(.svelte-1sm8h9z) /* (unused) .svelte-map-profile div.org-logo > img*/{
         height:100%;
         width:auto;
         display:inline-block;
@@ -82,7 +82,7 @@
         box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.4);
     }
 
-    .svelte-map-profile.svelte-x7fviv p.section-header:where(.svelte-x7fviv){
+    .svelte-map-profile.svelte-1sm8h9z p.section-header:where(.svelte-1sm8h9z){
         font-size:16px;
         font-weight:400;
         text-transform:uppercase;
@@ -90,31 +90,29 @@
         color:#A6C627;
     }
 
-    .svelte-map-profile.svelte-x7fviv p:where(.svelte-x7fviv) a:where(.svelte-x7fviv),
-    .svelte-map-profile.svelte-x7fviv p:where(.svelte-x7fviv) a:where(.svelte-x7fviv):visited{
+    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z) a:where(.svelte-1sm8h9z),
+    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z) a:where(.svelte-1sm8h9z):visited{
         color:inherit;
         text-decoration:none;
         border-bottom:1px dotted #A6C627;
         padding-bottom:3px;
     }
 
-    .svelte-map-profile.svelte-x7fviv p:where(.svelte-x7fviv) a:where(.svelte-x7fviv):hover{
+    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z) a:where(.svelte-1sm8h9z):hover{
         border-bottom:1px solid #A6C627;
     }
 
-    .svelte-map-profile.svelte-x7fviv p:where(.svelte-x7fviv) a:where(.svelte-x7fviv):active{
+    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z) a:where(.svelte-1sm8h9z):active{
         border-bottom:2px solid #A6C627;
     }
 
-    .svelte-map-profile.svelte-x7fviv{
-        transform: translateY(0px);
+    .svelte-map-profile.svelte-1sm8h9z{
         padding-bottom:25px;
         display:none;
+        border-bottom:1px solid #aaaaaa;
     }
 
-    .svelte-map-profile.profile-is-pinned.svelte-x7fviv{
-        transform: translateY(20px);
-        transition: transform 1s;
+    .svelte-map-profile.profile-is-pinned.svelte-1sm8h9z{
         display:block;
     }
 

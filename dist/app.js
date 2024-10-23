@@ -10372,10 +10372,10 @@ let url = {
 
 url.root = "./";
 
-var root_2$1 = template(`<a class="svelte-x7fviv"> </a>`);
-var root_1$1 = template(`<p class="org-name svelte-x7fviv"><!></p>`);
-var root_4 = template(`<p class="reading svelte-x7fviv"> </p>`);
-var root$2 = template(`<div class="svelte-map-profile profile-is-pinned svelte-x7fviv"><div class="innovator-photo svelte-x7fviv"><img class="svelte-x7fviv"></div> <p class="section-header svelte-x7fviv">Innovator</p> <p class="innovator-name svelte-x7fviv"> </p> <p class="section-header svelte-x7fviv">Organization</p> <!> <p class="section-header svelte-x7fviv">Location</p> <p class="reading svelte-x7fviv"> </p> <p class="section-header svelte-x7fviv">Region of focus</p> <p class="reading svelte-x7fviv"> </p> <p class="section-header svelte-x7fviv">Description</p> <!></div>`);
+var root_2$1 = template(`<a class="svelte-1sm8h9z"> </a>`);
+var root_1$1 = template(`<p class="org-name svelte-1sm8h9z"><!></p>`);
+var root_4 = template(`<p class="reading svelte-1sm8h9z"> </p>`);
+var root$2 = template(`<div class="svelte-map-profile profile-is-pinned svelte-1sm8h9z"><div class="innovator-photo svelte-1sm8h9z"><img class="svelte-1sm8h9z"></div> <p class="section-header svelte-1sm8h9z">Innovator</p> <p class="innovator-name svelte-1sm8h9z"> </p> <p class="section-header svelte-1sm8h9z">Organization</p> <!> <p class="section-header svelte-1sm8h9z">Location</p> <p class="reading svelte-1sm8h9z"> </p> <p class="section-header svelte-1sm8h9z">Region of focus</p> <p class="reading svelte-1sm8h9z"> </p> <p class="section-header svelte-1sm8h9z">Description</p> <!></div>`);
 
 function Profile($$anchor, $$props) {
 	push($$props, false);
