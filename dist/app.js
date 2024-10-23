@@ -10372,10 +10372,10 @@ let url = {
 
 url.root = "./";
 
-var root_2$1 = template(`<a class="svelte-1sjf9x1"> </a>`);
-var root_1$1 = template(`<p class="org-name svelte-1sjf9x1"><!></p>`);
-var root_4 = template(`<p class="reading svelte-1sjf9x1"> </p>`);
-var root$2 = template(`<div class="svelte-map-profile profile-is-pinned svelte-1sjf9x1"><div class="innovator-photo svelte-1sjf9x1"><img class="svelte-1sjf9x1"></div> <p class="section-header svelte-1sjf9x1">Innovator</p> <p class="innovator-name svelte-1sjf9x1"> </p> <p class="section-header svelte-1sjf9x1">Organization</p> <!> <p class="section-header svelte-1sjf9x1">Location</p> <p class="reading svelte-1sjf9x1"> </p> <p class="section-header svelte-1sjf9x1">Region of focus</p> <p class="reading svelte-1sjf9x1"> </p> <p class="section-header svelte-1sjf9x1">Description</p> <!></div>`);
+var root_2$1 = template(`<a class="svelte-x7fviv"> </a>`);
+var root_1$1 = template(`<p class="org-name svelte-x7fviv"><!></p>`);
+var root_4 = template(`<p class="reading svelte-x7fviv"> </p>`);
+var root$2 = template(`<div class="svelte-map-profile profile-is-pinned svelte-x7fviv"><div class="innovator-photo svelte-x7fviv"><img class="svelte-x7fviv"></div> <p class="section-header svelte-x7fviv">Innovator</p> <p class="innovator-name svelte-x7fviv"> </p> <p class="section-header svelte-x7fviv">Organization</p> <!> <p class="section-header svelte-x7fviv">Location</p> <p class="reading svelte-x7fviv"> </p> <p class="section-header svelte-x7fviv">Region of focus</p> <p class="reading svelte-x7fviv"> </p> <p class="section-header svelte-x7fviv">Description</p> <!></div>`);
 
 function Profile($$anchor, $$props) {
 	push($$props, false);
@@ -10524,11 +10524,22 @@ function resize(){
     let height = h+"px";
 
     window.parent.postMessage({"ea-brk-map":height}, "*");
+
+    let h2 = 0;
+    try{
+        let box2 = document.getElementById("ea-map-controls").getBoundingClientRect();
+        h2 = Math.round(box2.bottom - box2.top);
+    }
+    catch(e){
+        h2 = 0;
+    }
+
+    return {height:h, offset:h2};
 }
 
 var root_1 = template(`<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">`, 1);
-var root_2 = template(`<option class="svelte-1adtitn"> </option>`);
-var root = template(`<div class="svelte-root svelte-1adtitn"><div class="title-box svelte-1adtitn"><h1 class="svelte-1adtitn">Map of Structural Innovations in the United States</h1></div> <div class="content-box svelte-1adtitn"><div class="svelte-1adtitn"><div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;margin-bottom:15px;"><select style="display:inline-block; margin:1em auto;" class="svelte-1adtitn"></select></div> <div class="flex-container svelte-1adtitn"><div class="map-container svelte-1adtitn"><!> <!></div> <div class="profile-container svelte-1adtitn"></div></div></div></div></div>`);
+var root_2 = template(`<option class="svelte-1kto0xl"> </option>`);
+var root = template(`<div class="svelte-root svelte-1kto0xl"><div class="content-box svelte-1kto0xl"><div id="ea-map-controls"><div class="title-box svelte-1kto0xl"><h1 class="svelte-1kto0xl">Map of Structural Innovations in the United States</h1></div> <div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;margin-bottom:15px;"><select style="display:inline-block; margin:1em auto;" class="svelte-1kto0xl"></select></div></div> <div class="flex-container svelte-1kto0xl"><div class="map-container svelte-1kto0xl"><!> <!></div> <div class="profile-container svelte-1kto0xl"></div></div></div></div>`);
 
 function Main($$anchor, $$props) {
 	push($$props, false);
@@ -10593,12 +10604,17 @@ function Main($$anchor, $$props) {
 		}
 	}
 
+	let max_height = mutable_state("100vh");
+
 	//display the selected profile
 	//only run this when the user clicks on map or from dropdown
 	async function pinit() {
 		await tick();
 		pinned_profile(); //(1) make sure it's visible
-		resize(); //scroll to pinned place -- no longer needed
+
+		let dims = resize();
+
+		set$2(max_height, `${dims.height - dims.offset}px`); //scroll to pinned place -- no longer needed
 	}
 
 	//add the profile-is-pinned class to the pinned profile -- enables subtle animation
@@ -10644,12 +10660,12 @@ function Main($$anchor, $$props) {
 		append$1($$anchor, fragment);
 	});
 
-	var div_1 = sibling(child(div), 2);
+	var div_1 = child(div);
 
 	bind_this(div_1, ($$value) => set$2(content_box, $$value), () => get$2(content_box));
 
 	var div_2 = child(div_1);
-	var div_3 = child(div_2);
+	var div_3 = sibling(child(div_2), 2);
 	var select = child(div_3);
 
 	template_effect(() => {
@@ -10677,7 +10693,7 @@ function Main($$anchor, $$props) {
 		append$1($$anchor, option);
 	});
 
-	var div_4 = sibling(div_3, 2);
+	var div_4 = sibling(div_2, 2);
 	var div_5 = child(div_4);
 	var node = child(div_5);
 
@@ -10725,6 +10741,7 @@ function Main($$anchor, $$props) {
 			$$legacy: true
 		});
 	});
+	template_effect(() => set_attribute(div_6, "style", `max-height:${get$2(max_height) ?? ""}`));
 	bind_select_value(select, () => get$2(selected), ($$value) => set$2(selected, $$value));
 
 	event("change", select, () => {
