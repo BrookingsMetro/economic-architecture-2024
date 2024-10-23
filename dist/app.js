@@ -10517,6 +10517,15 @@ function Tooltip($$anchor, $$props) {
 	pop();
 }
 
+function resize(){
+    let box = document.getElementById("ea-brk-map").getBoundingClientRect();
+    box.right - box.left;
+    let h = Math.round(box.bottom - box.top);
+    let height = h+"px";
+
+    window.parent.postMessage({"ea-brk-map":height}, "*");
+}
+
 var root_1 = template(`<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">`, 1);
 var root_2 = template(`<option class="svelte-1gmkqkq"> </option>`);
 var root = template(`<div class="svelte-root svelte-1gmkqkq"><div class="title-box svelte-1gmkqkq"><h1 class="svelte-1gmkqkq">Innovations Map</h1></div> <div class="content-box svelte-1gmkqkq"><div class="svelte-1gmkqkq"><div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;margin-bottom:15px;"><select style="display:inline-block; margin:1em auto;" class="svelte-1gmkqkq"></select></div> <div class="flex-container svelte-1gmkqkq"><div class="map-container svelte-1gmkqkq"><!> <!></div> <div class="profile-container svelte-1gmkqkq"></div></div></div></div></div>`);
@@ -10589,6 +10598,7 @@ function Main($$anchor, $$props) {
 	async function pinit() {
 		await tick();
 		pinned_profile(); //(1) make sure it's visible
+		resize(); //scroll to pinned place -- no longer needed
 	}
 
 	//add the profile-is-pinned class to the pinned profile -- enables subtle animation
@@ -10726,16 +10736,7 @@ function Main($$anchor, $$props) {
 	pop();
 }
 
-function resize(){
-        let box = document.getElementById("ea-brk-map").getBoundingClientRect();
-        box.right - box.left;
-        let h = Math.round(box.bottom - box.top);
-        let height = h+"px";
-
-        window.parent.postMessage({"ea-brk-map":height}, "*");
-    }
-
-    function load_main(){
+function load_main(){
         resize();
         //todo: add handlers for failed data retrieval
         json((url.root + "data/meta.json"))
