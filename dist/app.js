@@ -10517,13 +10517,17 @@ function Tooltip($$anchor, $$props) {
 	pop();
 }
 
+//this has been modified to work with a fixed height iframe setup rather then a responsive one
+//it no longer emits a message to the parent window to resize the iframe
+//it now uses the viewport height minus the title bar area to determine the max height of the profile
+//container which is set each time a new profile is pinned
+
 function resize(){
     let box = document.getElementById("ea-brk-map").getBoundingClientRect();
     box.right - box.left;
-    let h = Math.round(box.bottom - box.top);
-    let height = h+"px";
+    Math.round(box.bottom - box.top);
 
-    window.parent.postMessage({"ea-brk-map":height}, "*");
+    //window.parent.postMessage({"ea-brk-map":height}, "*");
 
     let h2 = 0;
     try{
@@ -10534,12 +10538,17 @@ function resize(){
         h2 = 0;
     }
 
-    return {height:h, offset:h2};
+    let vh = Math.max(document.documentElement.clientHeight, (window.innerHeight || 0));
+    document.documentElement.clientWidth && window.innerWidth ?
+            Math.min(document.documentElement.clientWidth, window.innerWidth) : 
+            document.documentElement.clientWidth || window.innerWidth;
+
+    return {height:vh, offset:h2};
 }
 
 var root_1 = template(`<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">`, 1);
-var root_2 = template(`<option class="svelte-1kto0xl"> </option>`);
-var root = template(`<div class="svelte-root svelte-1kto0xl"><div class="content-box svelte-1kto0xl"><div id="ea-map-controls"><div class="title-box svelte-1kto0xl"><h1 class="svelte-1kto0xl">Map of Structural Innovations in the United States</h1></div> <div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;margin-bottom:15px;"><select style="display:inline-block; margin:1em auto;" class="svelte-1kto0xl"></select></div></div> <div class="flex-container svelte-1kto0xl"><div class="map-container svelte-1kto0xl"><!> <!></div> <div class="profile-container svelte-1kto0xl"></div></div></div></div>`);
+var root_2 = template(`<option class="svelte-1gcc7c2"> </option>`);
+var root = template(`<div class="svelte-root svelte-1gcc7c2"><div class="content-box svelte-1gcc7c2"><div id="ea-map-controls"><div class="title-box svelte-1gcc7c2"><h1 class="svelte-1gcc7c2">Map of Structural Innovations in the United States</h1></div> <div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;"><select style="display:inline-block; margin:1em auto;" class="svelte-1gcc7c2"></select></div></div> <div class="flex-container svelte-1gcc7c2"><div class="map-container svelte-1gcc7c2"><!> <!></div> <div class="profile-container svelte-1gcc7c2"></div></div></div></div>`);
 
 function Main($$anchor, $$props) {
 	push($$props, false);
@@ -10635,14 +10644,6 @@ function Main($$anchor, $$props) {
 	//
 	pinned_profile(); //
 	pinit(); //scroll to pinned profile when user clicks on map
-
-	function viewportResize() {
-		//record viewport dimensions (to do: verify this is best method)
-		Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-		document.documentElement.clientWidth && window.innerWidth ? Math.min(document.documentElement.clientWidth, window.innerWidth) : document.documentElement.clientWidth || window.innerWidth;
-	}
-
-	viewportResize(); //scroll events
 
 	legacy_pre_effect(() => ($pinned_place()), () => {
 		set$2(selected, $pinned_place());
@@ -10754,7 +10755,7 @@ function Main($$anchor, $$props) {
 }
 
 function load_main(){
-        resize();
+        resize(); //no longer really necessary with a fixed height iframe
         //todo: add handlers for failed data retrieval
         json((url.root + "data/meta.json"))
         .then(function(metadata){
@@ -10779,5 +10780,5 @@ function load_main(){
 
     }
 
-    window.addEventListener("resize", resize);
+    window.addEventListener("resize", resize); //no longer really necessary
     window.addEventListener("load", load_main);
