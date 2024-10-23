@@ -10231,8 +10231,6 @@ function Map_1($$anchor, $$props) {
 	let geo2 = null;
 
 	async function draw(highlight = null) {
-		console.log("drawing map");
-
 		if (geo == null) {
 			let t = await topo;
 
@@ -10520,8 +10518,8 @@ function Tooltip($$anchor, $$props) {
 }
 
 var root_1 = template(`<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">`, 1);
-var root_2 = template(`<option class="svelte-ciaaxp"> </option>`);
-var root = template(`<div class="svelte-root svelte-ciaaxp"><div class="title-box svelte-ciaaxp"><h1 class="svelte-ciaaxp">Innovations Map Concept</h1> <h2 class="svelte-ciaaxp">DRAFT: PLEASE DO NOT CITE OR DISTRIBUTE</h2></div> <div class="content-box svelte-ciaaxp"><div style="scroll-margin-top:150px;" class="svelte-ciaaxp"><div style="text-align:center;"><select style="display:inline-block; margin:1em auto;" class="svelte-ciaaxp"></select></div> <div class="flex-container svelte-ciaaxp"><div class="map-container svelte-ciaaxp"><!> <!></div> <div class="profile-container svelte-ciaaxp"></div></div></div></div></div>`);
+var root_2 = template(`<option class="svelte-1gmkqkq"> </option>`);
+var root = template(`<div class="svelte-root svelte-1gmkqkq"><div class="title-box svelte-1gmkqkq"><h1 class="svelte-1gmkqkq">Innovations Map</h1></div> <div class="content-box svelte-1gmkqkq"><div class="svelte-1gmkqkq"><div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;margin-bottom:15px;"><select style="display:inline-block; margin:1em auto;" class="svelte-1gmkqkq"></select></div> <div class="flex-container svelte-1gmkqkq"><div class="map-container svelte-1gmkqkq"><!> <!></div> <div class="profile-container svelte-1gmkqkq"></div></div></div></div></div>`);
 
 function Main($$anchor, $$props) {
 	push($$props, false);
@@ -10535,6 +10533,9 @@ function Main($$anchor, $$props) {
 	//keep track of the highlighted and pinned places on the map
 	const highlighted_place = writable(null);
 	const pinned_place = writable(null);
+
+	profile_data().sort((a, b) => a.innovator.name.localeCompare(b.innovator.name));
+
 	new Map(profile_data().map((d) => [d.id, d]));
 
 	let tooltip_data = mutable_state({
@@ -10553,6 +10554,7 @@ function Main($$anchor, $$props) {
 
 		let detail = payload.detail;
 		detail.ev;
+		let orgs = [].concat(detail.d.org).map((d) => d.name).join("</p><p>");
 
 		if ($highlighted_place() !== null) {
 			mutate(tooltip_data, get$2(tooltip_data).visible = true);
@@ -10561,7 +10563,7 @@ function Main($$anchor, $$props) {
 
 			try {
 				html += "<p>" + detail.d.innovator.name + "</p>";
-				html += "<p>" + detail.d.org.name + "</p>";
+				html += "<p>" + orgs + "</p>";
 				html += "<p>" + detail.d.location.label + "</p>"; //loop through summary
 			} catch(e) {
 				html = "<p>No data</p>";
@@ -10746,19 +10748,8 @@ function resize(){
 
             //create the main app once all the data is retrieved
             all_data.then(function(data){
-                console.log(data);
-                console.log(metadata);
-
                 mount(Main, { target: document.body, props: { metadata: metadata, profile_data: data } });
-                /*
-                const app = new Main({
-                    target: document.body,
-                    props: {
-                        metadata: metadata,
-                        profile_data: data
-                    }
-                });
-                */
+
             });
         })
         .catch(function(error){
