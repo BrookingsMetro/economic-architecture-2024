@@ -10737,7 +10737,7 @@ function resize(){
 
     function load_main(){
         resize();
-//todo: add handlers for failed data retrieval
+        //todo: add handlers for failed data retrieval
         json((url.root + "data/meta.json"))
         .then(function(metadata){
             //queue up the retrieval of all the data files
@@ -10746,9 +10746,10 @@ function resize(){
                 return json((url.root + "data/"+id+".json"));
             }) );
 
+            let target = document.getElementById("ea-brk-map");
             //create the main app once all the data is retrieved
             all_data.then(function(data){
-                mount(Main, { target: document.body, props: { metadata: metadata, profile_data: data } });
+                mount(Main, { target: target, props: { metadata: metadata, profile_data: data } });
 
             });
         })
