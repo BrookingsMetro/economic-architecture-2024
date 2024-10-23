@@ -1,0 +1,27 @@
+{
+    "id":"scot-rose",
+
+    "innovator":{
+        "name":"Scot Rose",
+        "link":null,
+        "headshot":"Scot-Rose.png"
+    },
+
+    "org":{
+        "name":"Class Valuation",
+        "link":"https://www.classvaluation.com/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Troy, Michigan",
+        "lonlat":[-83.2, 42.6],
+        "region":"National"
+    },
+    
+    "description":[
+        "At Class Valuation, Scot Rose and Nick Butterfield are restructuring the home appraisal process to offer more data-driven, unbiased appraisals. Currently, appraisals require on-site visits by individual appraisers who perform site walkthroughs to perform a valuation. These in-person observations create potential for racial and other biases as they necessarily rely on the subjective judgements of appraisers. Studies have shown the traditional appraisal process disadvantages Black homeowners.",
+        "Scot and Nick’s innovative approach transforms the traditional appraisal process to remove bias in three major ways. First, it automates the collection of house characteristics (e.g. size, number of rooms, etc.) through a 3D scanner operated by an individual located offsite. Second, it separates the act of scanning for house characteristics from the analysis of the data and overall valuation of the house, distributing the work streams across two different people. Third, it opens the role of performing the digital scan to people who do not have a specialized appraisal license.",
+        "By automating the collection of data and separating the collection activity from the analysis and overall valuation reinforces this level of objectivity, Scot and Nick have found a way to mitigate bias in the appraisal process. And by lowering the barrier to entry into a career in the appraisal industry, they will also increase diversity in the profession and with it increase the diversity of perspectives of those making valuations."
+    ]
+}

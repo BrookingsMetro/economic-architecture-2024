@@ -1,0 +1,30 @@
+{
+    "id":"tamara-knox",
+
+    "innovator":{
+        "name":"Tamara Knox",
+        "link":null,
+        "headshot":"Tamara_Knox_2.png"
+    },
+
+    "org":{
+        "name":"Frolic Community",
+        "link":"https://www.frolic.community/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Seattle, Washington",
+        "lonlat":[-122.3, 47.7],
+        "region":"City of Seattle, Northern California"
+    },
+    
+    "description":[
+        "Tamara Knox and her co-Founder Josh Morrison are the innovators behind Frolic, a cooperative ownership model designed to leverage Seattle's upzoning policies while preventing displacement by external developers.",
+        "Historically, Seattle’s focus on single-family housing and discriminatory practices has excluded many residents from neighborhoods. To encourage inclusivity, the City rezoned certain areas from single-family to multi-family housing. However, zoning changes alone cannot fully mitigate displacement.",
+        "Upzoning increases land value due to the potential for more units or diverse developments, resulting in higher property values and taxes. This tax increase can burden existing residents, making it difficult for homeowners with significant equity to sell their properties without financial loss. In hurried sales, homeowners often recover only a fraction of their home’s value, jeopardizing their financial security and social ties.",
+        "Frolic collaborates with upzoned property owners at risk of displacement to transform former single-family lots into multi-family cooperatives. This allows owners to remain on their land while developing multiple units, fostering spontaneous connections and community.",
+        "To keep down payments low, Frolic employs a cooperative model where the co-op owns the project, and each unit corresponds to a share. Residents purchase their share to own a specific unit, with down payments ranging from $10,000 to $40,000—far below Seattle's average of $140,000. Monthly payments are set at or below market rent, enabling families long dependent on rentals to finally purchase a home and build wealth.",
+        "As Tamara and Josh explore new opportunities to adapt the Frolic model to various contexts, they are uncovering possibilities to redesign capital flows, blending financing to create mutual gains while reinforcing communal bonds."
+    ]
+}

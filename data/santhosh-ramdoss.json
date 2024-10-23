@@ -1,0 +1,36 @@
+{
+    "id":"santhosh-ramdoss",
+
+    "innovator":{
+        "name":"Santhosh Ramdoss",
+        "link":null,
+        "headshot":"Santhosh-Ramdoss.png"
+    },
+
+    "org":[
+        {
+            "name":"Gary Community Ventures",
+            "link":"https://garycommunity.org/",
+            "logo":null
+        },
+        {
+            "name":"The Dearfield Fund for Black Wealth",
+            "link":"https://www.dearfieldfund.com/",
+            "logo":null
+        }
+    ],
+
+    "location":{
+        "label":"Denver, Colorado",
+        "lonlat":[-105.0, 39.7],
+        "region":"Colorado"
+    },
+    
+    "description":[
+        "Gary Community Ventures, under the leadership of Santhosh Ramdoss, developed a transformative model to address both homeownership challenges and wealth disparities across Colorado.",
+        "Across the United States, Black families often face significant obstacles when purchasing homes and typically lack the wealth of their white counterparts. A major contributor to this disparity is the difficulty in securing sufficient cash for down payments. Many Black families have the income and credit scores needed to qualify for a home loan, but they often struggle to gather enough cash for the down payment and closing costs. ",
+        "To directly address the income and capital constraints many prospective Black homeowners face in purchasing a home in Colorado, the Dearfield Fund for Black Wealth launched in 2021. While Santhosh developed the concept and financing structure of the fund, Aisha T. Weeks is now at the helm, steering Dearfield’s future growth.",
+        "Structured as a Special Purpose Credit Program, the Dearfield Fund provides Black homebuyers with up to $40,000 in down-payment assistance in exchange for a second lien on the property and a percentage of the home’s appreciated value. At the time of purchase, borrowers are required to contribute at least 3% of the property’s price. This initial equity, which is not included in underwriting thanks to Dearfield’s partnerships with first mortgage lenders, helps lower interest rates and reduces the cost of mortgage insurance. This arrangement decreases the initial purchase price of the home and lowers monthly post-purchase payments, ensuring affordability.",
+        "While the down-payment assistance is like a loan, homeowners do not make monthly payments or pay interest. Instead, when they sell or refinance, they repay the original down payment amount plus 5% of their home's appreciation. This innovative model serves as a scalable and replicable investment approach, attracting private capital to support new solutions to homeownership financing."
+    ]
+}

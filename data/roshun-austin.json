@@ -1,0 +1,30 @@
+{
+    "id":"roshun-austin",
+
+    "innovator":{
+        "name":"Roshun Austin",
+        "link":null,
+        "headshot":"Roshun-Austin.png"
+    },
+
+    "org":{
+        "name":"The Works, Inc",
+        "link":"https://www.theworkscdc.org/",
+        "logo":null
+    },
+
+    "location":{
+        "label":"Memphis, Tennessee",
+        "lonlat":[-90.0, 35.1],
+        "region":"North Memphis, City of Memphis"
+    },
+    
+    "description":[
+        "Roshun Austin is leading a transformative revitalization effort in Klondike, a historically disinvested community on the outskirts of Memphis, Tennessee. ",
+        "As one of the oldest Black-majority neighborhoods in North Memphis, Klondike has been home to notable civil rights leaders. Despite facing challenges like disinvestment and high vacancy rates, the neighborhood is home to a vibrant community actively upholding its legacy of civic engagement through community gardens and grassroots organizations.",
+        "However, development can pose several risks to historically disinvested Black-majority neighborhoods like Klondike. Concerns include potential displacement of long-time residents due to rising property values, which can lead to gentrification and loss of social ties and cultural identity. Inadequate community engagement may result in developments that fail to meet local needs, further exacerbating economic inequalities and straining infrastructure.",
+        "With a deep understanding of these challenges, Roshun and her team at The Works, Inc. are collaborating with residents to craft a comprehensive revitalization plan for Klondike, focused on restoring value to the neighborhood without displacing current residents. Central to Roshun's strategy is the rezoning of Klondike to facilitate mixed-income housing, including a 79-unit senior housing complex, designed to attract new residents and improve the quality of life for existing residents. In addition to housing developments, The Works is dedicated to improving the neighborhood’s aesthetics through landscaping, tree planting, and the establishment of community gardens and fruit orchards.",
+        "The Works team has also established community land trust, which decouples land ownership from homeownership, allowing buyers to purchase only the house. By retaining ownership of the land, the CLT removes the appreciated value of the land from the future resale equation, ensuring that land value remains within the community and making homes more affordable and accessible in the long-term.",
+        "Roshun's holistic approach not only aims to stabilize the neighborhood but also seeks to strengthen an already vibrant community where residents can also thrive and build wealth, ultimately reversing the impacts of historical disinvestment." 
+    ]
+}

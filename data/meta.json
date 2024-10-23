@@ -2,12 +2,8 @@
     "note": "This file contains metadata for the Economic Architecture - Brookings mapping collaboration. Note that the 'ids' field is a list of unique record IDs that correspond to the [1] unique ID assigned to each innovator as well as to the [2] filename containing data for that innovator. E.g. the data for innovator 'id1' should be contained in a file named 'id1.json'. Adding ids to this list will automatically add them to the map, assuming the corresponding data file exists in the 'data' directory.",
 
     "ids": [
-        "evelyn-zwiebach"
-    ],
-
-    "ids_all": [
         "ashley-allen", "bree-jones", "ellen-sahli", "charu-singh", "evelyn-zwiebach", "john-liss", "john-green", 
-        "kwasi-frye", "lance-george", "rosalind-williams"
+        "kwasi-frye", "lance-george", "rosalind-williams", "santhosh-ramdoss", "scot-rose", "tamara-knox", "roshun-austin"
     ],
 
     "fields": {
