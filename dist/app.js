@@ -10231,6 +10231,8 @@ function Map_1($$anchor, $$props) {
 	let geo2 = null;
 
 	async function draw(highlight = null) {
+		console.log("drawing map");
+
 		if (geo == null) {
 			let t = await topo;
 
@@ -10250,7 +10252,7 @@ function Map_1($$anchor, $$props) {
 			d.x = xy[0];
 			d.y = xy[1];
 
-			if (d.anchor) {
+			if (d.anchor || counts.get(d.dat.location.label) == 1) {
 				d.fx = d.x;
 				d.fy = d.y;
 			}
@@ -10280,19 +10282,22 @@ function Map_1($$anchor, $$props) {
 		});
 
 		//offset any overlapping circles
-		const sim = forceSimulation(sim_nodes).force("collision", forceCollide().radius((d) => d.anchor ? 0 : 12)).force("charge", forceManyBody().strength((d) => d.anchor ? 0 : -300).distanceMax(25)).force("link", forceLink(links).distance((d, i) => {
+		//CAUTION: RUNNING STATIC SIMULATION WILL BLOCK THE MAIN THREAD AND RESULTS IN
+		//ASSETS FAILING TO DOWNLOAD
+		const sim = forceSimulation(sim_nodes).alpha(1).velocityDecay(0.6).alphaDecay(0.1).force("link", forceLink(links).distance((d, i) => {
 			return counts.get(d.source.dat.location.label) > 1 ? 16 : 0;
-		}));
+		})).force("collision", forceCollide().radius((d) => d.anchor ? 0 : 12)).force("charge", forceManyBody().strength((d) => d.anchor ? 0 : -300).distanceMax(25));
 
-		stop(); //static simulation
-		sim.tick(300); //run 300 ticks
-		circles.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
-		console.log(links);
+		//stop(); //static simulation
+		//sim.tick(300) //run 300 ticks
+		sim.on("tick", () => {
+			circles.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
 
-		//if any circles are pinned, make sure they are positioned properly
-		g_pin.selectAll("circle").attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+			//if any circles are pinned, make sure they are positioned properly
+			g_pin.selectAll("circle").attr("cx", (d) => d.x).attr("cy", (d) => d.y);
 
-		g_links.selectAll("line").data(links).join("line").attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y).attr("stroke", "#176087").attr("stroke-width", "2px");
+			g_links.selectAll("line").data(links).join("line").attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y).attr("stroke", "#176087").attr("stroke-width", "2px");
+		});
 	}
 
 	async function highlight(id) {
@@ -10380,9 +10385,6 @@ function Profile($$anchor, $$props) {
 	let profile_data = prop($$props, "profile_data", 8);
 	let container = prop($$props, "container", 12);
 	let orgs = [].concat(profile_data().org);
-
-	console.log(orgs);
-
 	let src = "assets/headshots/" + profile_data().innovator.headshot;
 
 	init$1();
