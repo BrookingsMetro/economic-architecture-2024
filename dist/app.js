@@ -10372,10 +10372,10 @@ let url = {
 
 url.root = "./";
 
-var root_2$1 = template(`<a class="svelte-1sm8h9z"> </a>`);
-var root_1$1 = template(`<p class="org-name svelte-1sm8h9z"><!></p>`);
-var root_4 = template(`<p class="reading svelte-1sm8h9z"> </p>`);
-var root$2 = template(`<div class="svelte-map-profile profile-is-pinned svelte-1sm8h9z"><div class="innovator-photo svelte-1sm8h9z"><img class="svelte-1sm8h9z"></div> <p class="section-header svelte-1sm8h9z">Innovator</p> <p class="innovator-name svelte-1sm8h9z"> </p> <p class="section-header svelte-1sm8h9z">Organization</p> <!> <p class="section-header svelte-1sm8h9z">Location</p> <p class="reading svelte-1sm8h9z"> </p> <p class="section-header svelte-1sm8h9z">Region of focus</p> <p class="reading svelte-1sm8h9z"> </p> <p class="section-header svelte-1sm8h9z">Description</p> <!></div>`);
+var root_2$1 = template(`<a class="svelte-tjm08f"> </a>`);
+var root_1$1 = template(`<p class="org-name svelte-tjm08f"><!></p>`);
+var root_4 = template(`<p class="reading svelte-tjm08f"> </p>`);
+var root$2 = template(`<div class="svelte-map-profile profile-is-pinned svelte-tjm08f"><div class="innovator-photo svelte-tjm08f"><img class="svelte-tjm08f"></div> <p class="section-header svelte-tjm08f">Innovator</p> <p class="innovator-name svelte-tjm08f"> </p> <p class="section-header svelte-tjm08f">Organization</p> <!> <p class="section-header svelte-tjm08f">Location</p> <p class="reading svelte-tjm08f"> </p> <p class="section-header svelte-tjm08f">Region of focus</p> <p class="reading svelte-tjm08f"> </p> <p class="section-header svelte-tjm08f">Description</p> <!></div>`);
 
 function Profile($$anchor, $$props) {
 	push($$props, false);
@@ -10517,39 +10517,9 @@ function Tooltip($$anchor, $$props) {
 	pop();
 }
 
-//this has been modified to work with a fixed height iframe setup rather then a responsive one
-//it no longer emits a message to the parent window to resize the iframe
-//it now uses the viewport height minus the title bar area to determine the max height of the profile
-//container which is set each time a new profile is pinned
-
-function resize(){
-    let box = document.getElementById("ea-brk-map").getBoundingClientRect();
-    box.right - box.left;
-    Math.round(box.bottom - box.top);
-
-    //window.parent.postMessage({"ea-brk-map":height}, "*");
-
-    let h2 = 0;
-    try{
-        let box2 = document.getElementById("ea-map-controls").getBoundingClientRect();
-        h2 = Math.round(box2.bottom - box2.top);
-        console.log("h2: "+h2);
-    }
-    catch(e){
-        h2 = 0;
-    }
-
-    let vh = Math.max(document.documentElement.clientHeight, (window.innerHeight || 0));
-    document.documentElement.clientWidth && window.innerWidth ?
-            Math.min(document.documentElement.clientWidth, window.innerWidth) : 
-            document.documentElement.clientWidth || window.innerWidth;
-
-    return {height:vh, offset:h2};
-}
-
 var root_1 = template(`<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">`, 1);
-var root_2 = template(`<option class="svelte-1gcc7c2"> </option>`);
-var root = template(`<div class="svelte-root svelte-1gcc7c2"><div class="content-box svelte-1gcc7c2"><div id="ea-map-controls"><div class="title-box svelte-1gcc7c2"><h1 class="svelte-1gcc7c2">Map of Structural Innovations in the United States</h1></div> <div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;"><select style="display:inline-block; margin:1em auto;" class="svelte-1gcc7c2"></select></div></div> <div class="flex-container svelte-1gcc7c2"><div class="map-container svelte-1gcc7c2"><!> <!></div> <div class="profile-container svelte-1gcc7c2"></div></div></div></div>`);
+var root_2 = template(`<option class="svelte-9ec0bo"> </option>`);
+var root = template(`<div class="svelte-root svelte-9ec0bo"><div class="content-box svelte-9ec0bo"><div id="ea-map-controls" style="position:sticky;top:0px;left:0px;z-index:100;background-color:#ffffff;"><div class="title-box svelte-9ec0bo"><h1 class="svelte-9ec0bo">Map of Structural Innovations in the United States</h1></div> <div style="text-align:center; border-bottom:1px solid #aaaaaa;padding-bottom:10px;"><select style="display:inline-block; margin:1em auto;" class="svelte-9ec0bo"></select></div></div> <div class="flex-container svelte-9ec0bo"><div class="map-container svelte-9ec0bo"><!> <!></div> <div class="profile-container svelte-9ec0bo" style="z-index:50;"></div></div></div></div>`);
 
 function Main($$anchor, $$props) {
 	push($$props, false);
@@ -10614,22 +10584,27 @@ function Main($$anchor, $$props) {
 		}
 	}
 
-	let max_height = mutable_state("100vh");
+	let title_height = mutable_state(120);
+	let control_box = mutable_state(null);
 
-	function update_max_height() {
-		let dims = resize();
+	function update_height() {
+		try {
+			let b = get$2(control_box).getBoundingClientRect();
 
-		set$2(max_height, `calc(100vh - ${dims.offset}px`);
+			set$2(title_height, Math.round(b.bottom - b.top));
+		} catch(e) {
+			set$2(title_height, 120);
+		}
 	}
 
-	window.addEventListener("resize", update_max_height);
+	window.addEventListener("resize", update_height);
 
 	//display the selected profile
 	//only run this when the user clicks on map or from dropdown
 	async function pinit() {
 		await tick();
-		pinned_profile(); //(1) make sure it's visible
-		update_max_height(); //update max height of profile container
+		pinned_profile(); //(1) make sure it's visible   
+		update_height(); //scroll to pinned place -- no longer needed
 	}
 
 	//add the profile-is-pinned class to the pinned profile -- enables subtle animation
@@ -10672,6 +10647,9 @@ function Main($$anchor, $$props) {
 	bind_this(div_1, ($$value) => set$2(content_box, $$value), () => get$2(content_box));
 
 	var div_2 = child(div_1);
+
+	bind_this(div_2, ($$value) => set$2(control_box, $$value), () => get$2(control_box));
+
 	var div_3 = sibling(child(div_2), 2);
 	var select = child(div_3);
 
@@ -10748,7 +10726,7 @@ function Main($$anchor, $$props) {
 			$$legacy: true
 		});
 	});
-	template_effect(() => set_attribute(div_6, "style", `max-height:${get$2(max_height) ?? ""}`));
+	template_effect(() => set_attribute(div_5, "style", `position:sticky;left:0px;top:${get$2(title_height) ?? ""}px;z-index:50;`));
 	bind_select_value(select, () => get$2(selected), ($$value) => set$2(selected, $$value));
 
 	event("change", select, () => {
@@ -10761,7 +10739,6 @@ function Main($$anchor, $$props) {
 }
 
 function load_main(){
-        resize(); //no longer really necessary with a fixed height iframe
         //todo: add handlers for failed data retrieval
         json((url.root + "data/meta.json"))
         .then(function(metadata){

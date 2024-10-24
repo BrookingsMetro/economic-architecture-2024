@@ -4,32 +4,32 @@
     }
 
 
-    .svelte-map-profile.svelte-1sm8h9z{
+    .svelte-map-profile.svelte-tjm08f{
         padding:0.5em 15px;
         padding-top:15px;
         margin:1em 0px;
     }
 
-    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z){
+    .svelte-map-profile.svelte-tjm08f p:where(.svelte-tjm08f){
         color:#000000;
     }
 
-    .svelte-map-profile.svelte-1sm8h9z p.reading:where(.svelte-1sm8h9z){
+    .svelte-map-profile.svelte-tjm08f p.reading:where(.svelte-tjm08f){
         font-size:16px;
         line-height:1.4em;
         margin:0em 0em 1em 0em;
         font-weight:400;
     }
 
-    .svelte-map-profile.svelte-1sm8h9z p.innovator-name:where(.svelte-1sm8h9z),
-    .svelte-map-profile.svelte-1sm8h9z p.org-name:where(.svelte-1sm8h9z){
+    .svelte-map-profile.svelte-tjm08f p.innovator-name:where(.svelte-tjm08f),
+    .svelte-map-profile.svelte-tjm08f p.org-name:where(.svelte-tjm08f){
         font-size:20px;
         line-height:1.2em;
         font-weight:900;
         margin:0em 0em 10px 0em;
     }
 
-    .svelte-map-profile.svelte-1sm8h9z div.innovator-photo:where(.svelte-1sm8h9z):before{
+    .svelte-map-profile.svelte-tjm08f div.innovator-photo:where(.svelte-tjm08f):before{
         content:"";
         position:absolute;
         top:-10px;
@@ -44,7 +44,7 @@
 
     }
 
-    .svelte-map-profile.svelte-1sm8h9z div.innovator-photo:where(.svelte-1sm8h9z):after{
+    .svelte-map-profile.svelte-tjm08f div.innovator-photo:where(.svelte-tjm08f):after{
         content:"";
         position:absolute;
         top:-6px;
@@ -59,7 +59,7 @@
 
     }
 
-    .svelte-map-profile.svelte-1sm8h9z div.innovator-photo:where(.svelte-1sm8h9z) /* (unused) .svelte-map-profile div.org-logo*/{
+    .svelte-map-profile.svelte-tjm08f div.innovator-photo:where(.svelte-tjm08f) /* (unused) .svelte-map-profile div.org-logo*/{
         width:100%;
         max-width:250px;
         height:25vh;
@@ -70,7 +70,7 @@
         position:relative;
     }
 
-    .svelte-map-profile.svelte-1sm8h9z div.innovator-photo > img:where(.svelte-1sm8h9z) /* (unused) .svelte-map-profile div.org-logo > img*/{
+    .svelte-map-profile.svelte-tjm08f div.innovator-photo > img:where(.svelte-tjm08f) /* (unused) .svelte-map-profile div.org-logo > img*/{
         height:100%;
         width:auto;
         display:inline-block;
@@ -82,7 +82,7 @@
         box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.4);
     }
 
-    .svelte-map-profile.svelte-1sm8h9z p.section-header:where(.svelte-1sm8h9z){
+    .svelte-map-profile.svelte-tjm08f p.section-header:where(.svelte-tjm08f){
         font-size:16px;
         font-weight:400;
         text-transform:uppercase;
@@ -90,29 +90,28 @@
         color:#A6C627;
     }
 
-    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z) a:where(.svelte-1sm8h9z),
-    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z) a:where(.svelte-1sm8h9z):visited{
+    .svelte-map-profile.svelte-tjm08f p:where(.svelte-tjm08f) a:where(.svelte-tjm08f),
+    .svelte-map-profile.svelte-tjm08f p:where(.svelte-tjm08f) a:where(.svelte-tjm08f):visited{
         color:inherit;
         text-decoration:none;
         border-bottom:1px dotted #A6C627;
         padding-bottom:3px;
     }
 
-    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z) a:where(.svelte-1sm8h9z):hover{
+    .svelte-map-profile.svelte-tjm08f p:where(.svelte-tjm08f) a:where(.svelte-tjm08f):hover{
         border-bottom:1px solid #A6C627;
     }
 
-    .svelte-map-profile.svelte-1sm8h9z p:where(.svelte-1sm8h9z) a:where(.svelte-1sm8h9z):active{
+    .svelte-map-profile.svelte-tjm08f p:where(.svelte-tjm08f) a:where(.svelte-tjm08f):active{
         border-bottom:2px solid #A6C627;
     }
 
-    .svelte-map-profile.svelte-1sm8h9z{
+    .svelte-map-profile.svelte-tjm08f{
         padding-bottom:25px;
         display:none;
-        border-bottom:1px solid #aaaaaa;
     }
 
-    .svelte-map-profile.profile-is-pinned.svelte-1sm8h9z{
+    .svelte-map-profile.profile-is-pinned.svelte-tjm08f{
         display:block;
     }
 
@@ -151,7 +150,7 @@
         margin:0px;
     }
 
-    h1.svelte-1gcc7c2 /* (unused) h2*/{
+    h1.svelte-9ec0bo /* (unused) h2*/{
         font-family: 'Barlow', sans-serif;
         font-size:32px;
         font-weight:900;
@@ -161,7 +160,7 @@
         text-transform: uppercase;
     }
 
-    h1.svelte-1gcc7c2{
+    h1.svelte-9ec0bo{
         font-size:36px;
     }
 
@@ -169,14 +168,16 @@
         font-size:24px;
     }*/
 
-    .svelte-root.svelte-1gcc7c2{
+    .svelte-root.svelte-9ec0bo{
         max-width:1600px;
         height:100vh;
         margin:0px auto;
         position:relative;
+        border-bottom:1px solid #aaaaaa;
+        overflow-y:auto;
     }
 
-    .title-box.svelte-1gcc7c2{
+    .title-box.svelte-9ec0bo{
         max-width:1600px;
         margin-left:max(0px, calc((100% - 1600px)/2));
         width:100%;
@@ -184,28 +185,27 @@
         background-color:#ffffff;
     }
 
-    .content-box.svelte-1gcc7c2{
+    .content-box.svelte-9ec0bo{
         position:relative;
     }
 
-    .svelte-root.svelte-1gcc7c2 .flex-container:where(.svelte-1gcc7c2){
+    .svelte-root.svelte-9ec0bo .flex-container:where(.svelte-9ec0bo){
         display:flex;
         flex-direction:row;
         position:relative;
         align-items: flex-start;
     }
 
-    .svelte-root.svelte-1gcc7c2 .flex-container > .profile-container:where(.svelte-1gcc7c2){
+    .svelte-root.svelte-9ec0bo .flex-container > .profile-container:where(.svelte-9ec0bo){
         background-color:rgba(255,255,255,0.7);
         max-width:780px;
         margin:0px auto;
-        border-bottom:1px solid #aaaaaa;
         overflow-y: auto;
     }
 
     @media screen and (min-width: 0px) {
-        .svelte-root.svelte-1gcc7c2 .flex-container:where(.svelte-1gcc7c2){flex-direction:column;}
-        .svelte-root.svelte-1gcc7c2 .flex-container > .map-container:where(.svelte-1gcc7c2){
+        .svelte-root.svelte-9ec0bo .flex-container:where(.svelte-9ec0bo){flex-direction:column;}
+        .svelte-root.svelte-9ec0bo .flex-container > .map-container:where(.svelte-9ec0bo){
             width:100%; 
             z-index:300;
             background-color:#ffffff;
@@ -215,7 +215,7 @@
             padding:25px 10%;
             box-sizing:border-box;
         }
-        .svelte-root.svelte-1gcc7c2 .flex-container > .profile-container:where(.svelte-1gcc7c2){
+        .svelte-root.svelte-9ec0bo .flex-container > .profile-container:where(.svelte-9ec0bo){
             width:100%; 
             z-index:200;
             max-width:480px;
@@ -223,21 +223,21 @@
     }
 
     @media screen and (min-width: 640px) {
-        .svelte-root.svelte-1gcc7c2 .flex-container:where(.svelte-1gcc7c2){flex-direction:row;}
-        .svelte-root.svelte-1gcc7c2 .flex-container > .map-container:where(.svelte-1gcc7c2){
+        .svelte-root.svelte-9ec0bo .flex-container:where(.svelte-9ec0bo){flex-direction:row;}
+        .svelte-root.svelte-9ec0bo .flex-container > .map-container:where(.svelte-9ec0bo){
             width:40%;
             border-style:none;
             padding:25px 5px 5px 5px;
         }
-        .svelte-root.svelte-1gcc7c2 .flex-container > .profile-container:where(.svelte-1gcc7c2){width:60%;}
+        .svelte-root.svelte-9ec0bo .flex-container > .profile-container:where(.svelte-9ec0bo){width:60%;}
     }
 
     @media screen and (min-width: 1024px) {
-        .svelte-root.svelte-1gcc7c2 .flex-container > .map-container:where(.svelte-1gcc7c2){width:60%;}
-        .svelte-root.svelte-1gcc7c2 .flex-container > .profile-container:where(.svelte-1gcc7c2){width:40%; max-width:640px;}
+        .svelte-root.svelte-9ec0bo .flex-container > .map-container:where(.svelte-9ec0bo){width:60%;}
+        .svelte-root.svelte-9ec0bo .flex-container > .profile-container:where(.svelte-9ec0bo){width:40%; max-width:640px;}
     }
 
-    select.svelte-1gcc7c2{
+    select.svelte-9ec0bo{
         padding:6px 3px;
         font-size:18px;
         border: 1px solid #3C451C;
@@ -249,11 +249,11 @@
         font-family: 'Barlow', sans-serif;
     }
 
-    option.svelte-1gcc7c2{
+    option.svelte-9ec0bo{
         font-family: 'Barlow', sans-serif;
     }
 
-    select.svelte-1gcc7c2:focus{
+    select.svelte-9ec0bo:focus{
         
         border:1px solid #A6C627;
     }
